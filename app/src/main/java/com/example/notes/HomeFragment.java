@@ -87,7 +87,7 @@ public class HomeFragment extends Fragment implements Searchable{
             public void onNoteClick(NotesAdapter.NotesViewHolder holder, int position) {
                 long id = noteList.get(position).getId();
                 note.setId(id);
-                Intent intent = new Intent(getContext(), NotesActivity.class);
+                Intent intent = new Intent(getContext(), UpdateActivity.class);
                 intent.putExtra("ID", note.getId());
                 startActivity(intent);
             }

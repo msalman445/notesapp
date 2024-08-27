@@ -104,7 +104,7 @@ public class FavoriteFragment extends Fragment implements Searchable{
             public void onNoteClick(NotesAdapter.NotesViewHolder holder, int position) {
                 long id = noteList.get(position).getId();
 
-                Intent intent = new Intent(getContext(), NotesActivity.class);
+                Intent intent = new Intent(getContext(), UpdateActivity.class);
                 intent.putExtra("ID",id);
                 startActivity(intent);
             }
