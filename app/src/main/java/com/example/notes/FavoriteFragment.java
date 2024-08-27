@@ -1,5 +1,6 @@
 package com.example.notes;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -49,6 +50,7 @@ public class FavoriteFragment extends Fragment implements Searchable{
         rvFavNotes.setHasFixedSize(false);
 
         removeNotes();
+        notesClick();
 
 
         return view;
@@ -85,6 +87,7 @@ public class FavoriteFragment extends Fragment implements Searchable{
         notesAdapter = new NotesAdapter(noteList);
         rvFavNotes.setAdapter(notesAdapter);
         removeNotes();
+        notesClick();
         super.onResume();
     }
 
@@ -93,5 +96,18 @@ public class FavoriteFragment extends Fragment implements Searchable{
     public void performSearch(String query) {
         currentSearchQuery = query;
         notesAdapter.getFilter().filter(query);
+    }
+
+    public void notesClick(){
+        notesAdapter.setIOnNoteClickListener(new NotesAdapter.IOnNoteClickListener() {
+            @Override
+            public void onNoteClick(NotesAdapter.NotesViewHolder holder, int position) {
+                long id = noteList.get(position).getId();
+
+                Intent intent = new Intent(getContext(), NotesActivity.class);
+                intent.putExtra("ID",id);
+                startActivity(intent);
+            }
+        });
     }
 }
