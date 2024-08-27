@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="clrTime">#929292</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clrYellow">#E9D95F</color>
+    <color name="clrNotesBackground">#F7F7F7</color>
+    <color name="clrTopAppBar">#7E7E7E</color>
+    <color name="clrBottomMenuItems">#7E7E7E</color>
+    <color name="clrSettingsBackground">#E6E6E6</color>
+
+</resources>

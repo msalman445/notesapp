@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRemFav"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:text="Remove From Favorites"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        />
+
+</LinearLayout>

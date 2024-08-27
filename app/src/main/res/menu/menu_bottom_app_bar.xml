@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/itmBold"
+        android:title="Bold"
+        android:icon="@drawable/baseline_format_bold_24"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/itmItalic"
+        android:title="Italic"
+        android:icon="@drawable/baseline_format_italic_24"
+        app:showAsAction="always"
+        />
+
+
+
+    <item
+        android:id="@+id/itmNoFormat"
+        android:title="No Format"
+        android:icon="@drawable/baseline_format_clear_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/itmImage"
+        android:title="Image"
+        android:icon="@drawable/baseline_image_24"
+        app:showAsAction="always"
+        />
+</menu>

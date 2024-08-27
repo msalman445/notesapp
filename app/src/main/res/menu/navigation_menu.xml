@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/itmMain"
+            android:title="Main">
+
+            <menu>
+                <item
+                    android:id="@+id/itmAllNotes"
+                    android:icon="@drawable/baseline_home_filled_24"
+                    android:title="All Notes"
+                    android:checked="true"
+                    />
+
+                <item
+                    android:id="@+id/itmFavorites"
+                    android:title="Favorites"
+                    android:icon="@drawable/baseline_favorite_24"
+                    />
+
+                <item
+                    android:id="@+id/itmRecycleBin"
+                    android:title="Recycle Bin"
+                    android:icon="@drawable/recycle_bin"
+                    />
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/itmShare"
+        android:title="Share Us"
+        android:icon="@drawable/baseline_share_24"
+        />
+
+    <item
+        android:id="@+id/itmSettings"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"
+        />
+</menu>
